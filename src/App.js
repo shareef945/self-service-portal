@@ -9,7 +9,7 @@ import Card from "./components/Card";
 
 function App() {
   const [search, setSearch] = useState("");
-  const [name, setName] = useState("Shareef");
+  const [name, setName] = useState("Shareef Ali");
   const apps = [
     { application: "ECG", url: "/portal/ecg" },
     { application: "E-Levy", url: "/portal/ecg" },
@@ -32,11 +32,6 @@ function App() {
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search"
             icon={SearchIcon}
-            error={false}
-            errorMessage=""
-            disabled={false}
-            maxWidth="max-w-none"
-            marginTop="mt-0"
           />
         </div>
         <div className="icon">
